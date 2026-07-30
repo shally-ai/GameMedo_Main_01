@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import Breadcrumb from "@/components/Breadcrumb";
+import TrustBar from "@/components/TrustBar";
 import CTASection from "@/components/CTASection";
 import { UserCheck, Sparkles, Clock, Shield, CheckCircle2, ChevronRight } from "lucide-react";
 
@@ -106,6 +107,8 @@ const VirtualAssistantAD: React.FC = () => {
             </motion.div>
           </div>
         </section>
+
+        <TrustBar />
 
         {/* What We Offer */}
         <section className="py-20 md:py-28 container mx-auto px-4 max-w-6xl">

@@ -14,6 +14,8 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import SEO from "@/components/SEO";
+import TrustBar from "@/components/TrustBar";
+
 
 const WhoWeServeSection = () => {
   const categories = [
@@ -167,9 +169,23 @@ const Index = () => {
         keywords="high school sports graphics, varsity highlight videos, athletic website design, sports video production, athletic department services, GameMedo"
         url="https://gamemedo.com/"
         canonical="https://gamemedo.com/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "GameMedo",
+          "url": "https://gamemedo.com",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "50",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        }}
       />
       <Navbar />
       <HeroSection />
+      <TrustBar />
       <ServicesSection />
       <HowItWorksSection />
       <WhoWeServeSection />

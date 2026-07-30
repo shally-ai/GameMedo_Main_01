@@ -5,26 +5,36 @@ import { supabase } from "@/integrations/supabase/client";
 import useEmblaCarousel from "embla-carousel-react";
 import { cn } from "@/lib/utils";
 
-const testimonials = [
+interface Testimonial {
+  quote: string;
+  name: string;
+  role?: string;
+  school: string;
+}
+
+const testimonials: Testimonial[] = [
   {
-    quote: "Our players were hyped! The graphics GameMedo created set the tone for every home game. Best investment we made all season.",
-    name: "Coach Martinez",
-    school: "Lincoln High School",
+    quote: "GameMedo transformed how we present our athletic program online. Parents and students love the new website and our social media engagement tripled in the first month.",
+    name: "Coach Marcus Johnson",
+    role: "Athletic Director",
+    school: "Jefferson High School Athletics"
   },
   {
-    quote: "The highlight videos and player spotlights were absolutely professional. Parents and fans loved it.",
-    name: "AD Johnson",
-    school: "Westfield Academy",
+    quote: "The virtual assistant service has been a game changer. I get back 10+ hours every week that I used to spend on scheduling and emails.",
+    name: "Sarah Williams",
+    role: "Athletic Director",
+    school: "Riverside Middle School"
   },
   {
-    quote: "GameMedo transformed our team's brand. We've already ordered for next season. Incredible quality and turnaround.",
-    name: "Coach Davis",
-    school: "Riverside High",
-  },
+    quote: "Our highlight videos are now at a professional level. College coaches have actually reached out after watching reels GameMedo produced for our players.",
+    name: "Coach David Reyes",
+    role: "Varsity Football Coach",
+    school: "Central High School"
+  }
 ];
 
 const TestimonialsSection = () => {
-  const [testimonialsData, setTestimonialsData] = useState(testimonials);
+  const [testimonialsData, setTestimonialsData] = useState<Testimonial[]>(testimonials);
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     align: "start",
     containScroll: "trimSnaps",
@@ -52,8 +62,8 @@ const TestimonialsSection = () => {
     const fetchContent = async () => {
       try {
         const { data: docSnap } = await supabase.from("content").select("testimonials").eq("id", "main").maybeSingle();
-        if (docSnap?.testimonials) {
-          setTestimonialsData(docSnap.testimonials);
+        if (docSnap?.testimonials && Array.isArray(docSnap.testimonials) && docSnap.testimonials.length > 0) {
+          setTestimonialsData(docSnap.testimonials as Testimonial[]);
         }
       } catch (error) {
         console.error("Error fetching testimonials content:", error);
@@ -89,7 +99,9 @@ const TestimonialsSection = () => {
                       </div>
                       <div>
                         <p className="font-heading text-sm font-bold uppercase tracking-wider">{t.name}</p>
-                        <p className="text-muted-foreground text-xs">{t.school}</p>
+                        <p className="text-muted-foreground text-xs">
+                          {t.role ? `${t.role}, ` : ""}{t.school}
+                        </p>
                       </div>
                     </div>
                   </motion.div>
@@ -137,7 +149,9 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <p className="font-heading text-xs font-bold uppercase tracking-wider">{t.name}</p>
-                  <p className="text-muted-foreground text-[10px] uppercase tracking-widest">{t.school}</p>
+                  <p className="text-muted-foreground text-[10px] uppercase tracking-widest">
+                    {t.role ? `${t.role}, ` : ""}{t.school}
+                  </p>
                 </div>
               </div>
             </motion.div>
