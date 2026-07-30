@@ -6,20 +6,78 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const pages = [
-  '/',
-  '/about',
-  '/blog',
-  '/contact',
-  '/samples',
-  '/services',
-  '/services/sports-highlight-videos',
-  '/services/athletic-website-design',
-  '/services/athletic-website-management',
-  '/services/social-media-management',
-  '/services/virtual-assistant-athletic-directors',
-  '/who-we-serve',
-  '/hire-us',
-  '/order'
+  { 
+    url: '/', 
+    changefreq: 'weekly', 
+    priority: 1.0,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/about', 
+    changefreq: 'monthly', 
+    priority: 0.7,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/contact', 
+    changefreq: 'monthly', 
+    priority: 0.8,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/samples', 
+    changefreq: 'weekly', 
+    priority: 0.8,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services/sports-highlight-videos', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services/athletic-website-design', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services/athletic-website-management', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services/social-media-management', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/services/virtual-assistant-athletic-directors', 
+    changefreq: 'weekly', 
+    priority: 0.9,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/who-we-serve', 
+    changefreq: 'monthly', 
+    priority: 0.8,
+    lastmod: new Date().toISOString().split('T')[0]
+  },
+  { 
+    url: '/blog', 
+    changefreq: 'daily', 
+    priority: 0.8,
+    lastmod: new Date().toISOString().split('T')[0]
+  }
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -27,9 +85,10 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${pages
   .map(
     p => `  <url>
-    <loc>https://gamemedo.com${p}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${p === '/' ? '1.0' : '0.8'}</priority>
+    <loc>https://gamemedo.com${p.url}</loc>
+    <lastmod>${p.lastmod}</lastmod>
+    <changefreq>${p.changefreq}</changefreq>
+    <priority>${p.priority.toFixed(1)}</priority>
   </url>`
   )
   .join('\n')}
