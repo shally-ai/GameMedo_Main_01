@@ -13,7 +13,8 @@ import AdminSamples from "./Tabs/AdminSamples";
 import AdminHeroMedia from "./Tabs/AdminHeroMedia";
 import AdminAffiliates from "./Tabs/AdminAffiliates";
 import AdminGigs from "./Tabs/AdminGigs";
-import { Image as ImageIcon, MonitorPlay, LogIn, Users, Briefcase } from "lucide-react";
+import AdminBlog from "./Tabs/AdminBlog";
+import { Image as ImageIcon, MonitorPlay, LogIn, Users, Briefcase, BookOpen } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 const AdminDashboard = () => {
@@ -95,6 +96,8 @@ const AdminDashboard = () => {
         return <AdminAffiliates />;
       case "gigs":
         return <AdminGigs />;
+      case "blogs":
+        return <AdminBlog />;
       case "content":
         return <AdminContent />;
       default:
@@ -188,6 +191,16 @@ const AdminDashboard = () => {
           </button>
 
           <button
+            onClick={() => setActiveTab("blogs")}
+            className={cn(
+              "w-full flex items-center gap-3 px-4 py-3 rounded-md transition-colors font-heading text-sm tracking-wider uppercase",
+              activeTab === "blogs" ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+            )}
+          >
+            <BookOpen className="w-4 h-4" /> Blogs
+          </button>
+
+          <button
             onClick={() => setActiveTab("content")}
             className={cn(
               "w-full flex items-center gap-3 px-4 py-3 rounded-md transition-colors font-heading text-sm tracking-wider uppercase",
@@ -239,6 +252,10 @@ const AdminDashboard = () => {
         <button onClick={() => setActiveTab("hero")} className={cn("flex flex-col items-center p-2 rounded-xl transition-all", activeTab === "hero" ? "text-primary bg-primary/10" : "text-muted-foreground")}>
           <MonitorPlay className="w-5 h-5" />
           <span className="text-[8px] font-heading font-bold uppercase tracking-wider mt-1">Hero</span>
+        </button>
+        <button onClick={() => setActiveTab("blogs")} className={cn("flex flex-col items-center p-2 rounded-xl transition-all", activeTab === "blogs" ? "text-primary bg-primary/10" : "text-muted-foreground")}>
+          <BookOpen className="w-5 h-5" />
+          <span className="text-[8px] font-heading font-bold uppercase tracking-wider mt-1">Blogs</span>
         </button>
         <button onClick={() => setActiveTab("content")} className={cn("flex flex-col items-center p-2 rounded-xl transition-all", activeTab === "content" ? "text-primary bg-primary/10" : "text-muted-foreground")}>
           <FileText className="w-5 h-5" />
