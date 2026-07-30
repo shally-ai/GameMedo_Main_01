@@ -44,7 +44,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       <nav 
         aria-label="Breadcrumb" 
         className="flex items-center gap-1.5 text-sm 
-          text-muted-foreground py-3 px-4 
+          text-muted-foreground pt-20 md:pt-24 pb-3 px-4 
           max-w-6xl mx-auto"
       >
         <Link 
