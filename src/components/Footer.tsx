@@ -52,9 +52,15 @@ const Footer = () => {
           </span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-4 md:mt-0">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-4 md:mt-0 max-w-2xl">
           {[
             { label: "Home", href: "/" },
+            { label: "Services", href: "/services" },
+            { label: "Highlight Videos", href: "/services/sports-highlight-videos" },
+            { label: "Website Design", href: "/services/athletic-website-design" },
+            { label: "VA Services", href: "/services/virtual-assistant-athletic-directors" },
+            { label: "Blog", href: "/blog" },
+            { label: "Who We Serve", href: "/who-we-serve" },
             { label: "About", href: "/about" },
             { label: "Contact", href: "/contact" },
             { label: "Affiliate", href: "/affiliate" },
@@ -64,7 +70,7 @@ const Footer = () => {
             <Link
               key={link.label}
               to={link.href}
-              className="text-muted-foreground text-sm hover:text-primary transition-colors whitespace-nowrap"
+              className="text-muted-foreground text-xs md:text-sm hover:text-primary transition-colors whitespace-nowrap"
             >
               {link.label}
             </Link>
