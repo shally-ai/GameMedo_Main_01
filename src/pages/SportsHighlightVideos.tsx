@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import { Play, Sparkles, Clock, Film, CheckCircle2, ChevronRight } from "lucide-react";
 
@@ -52,6 +53,10 @@ const SportsHighlightVideos: React.FC = () => {
         }}
       />
       <Navbar />
+      <Breadcrumb items={[
+        { label: "Services", href: "/services" },
+        { label: "Sports Highlight & Hype Videos" }
+      ]} />
 
       <main className="pt-20">
         {/* Hero Section */}
