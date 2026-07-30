@@ -10,6 +10,7 @@ const pages = [
   '/about',
   '/contact',
   '/samples',
+  '/services',
   '/services/sports-highlight-videos',
   '/services/athletic-website-design',
   '/services/athletic-website-management',
