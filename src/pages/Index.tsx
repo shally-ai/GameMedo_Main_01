@@ -15,9 +15,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background scroll-smooth">
       <div className="grain-overlay" />
-      <SEO 
-        title="GameMedo — Athletic Website Design, Sports Highlight Videos & VA Services"
-        description="GameMedo helps high school athletic departments with highlight videos, athletic website design, website management, social media, and Virtual Assistant services for Athletic Directors."
+      <SEO
+        title="GameMedo | High School & Varsity Sports Graphic Design & Video Editing"
+        description="GameMedo helps middle schools, high schools, and varsity athletic departments across the U.S. with sports highlight videos, athletic website design, social media management, and virtual assistant services for Athletic Directors."
+        keywords="high school sports graphics, varsity highlight videos, athletic website design, sports video production, athletic department services, GameMedo"
+        url="https://gamemedo.com/"
+        canonical="https://gamemedo.com/"
       />
       <Navbar />
       <HeroSection />

@@ -59,9 +59,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO 
-        title="About GameMedo — Sports Marketing & Video Production for Schools" 
-        description="Learn about GameMedo, our mission to support athletic departments, and our experience producing highlight videos and athletic websites for schools nationwide."
+      <SEO
+        title="About GameMedo - Sports Agency for High School Athletic Departments"
+        description="Learn about GameMedo's mission to elevate middle school, high school, and varsity athletic programs with professional sports videos, website design, and administrative support services across the United States."
+        keywords="about GameMedo, sports agency for high schools, athletic department agency, sports design company, varsity sports services, high school athletics support"
+        url="https://gamemedo.com/about"
+        canonical="https://gamemedo.com/about"
       />
       <Navbar />
 

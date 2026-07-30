@@ -50,9 +50,12 @@ const Samples = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col selection:bg-primary/30">
-      <SEO 
-        title="GameMedo Portfolio — Sports Graphics, Videos & Athletic Websites" 
-        description="View our highlight videos, hype reels, website examples, and design work created for high school and varsity athletic programs."
+      <SEO
+        title="GameMedo Portfolio - Sports Videos, Graphics & Athletic Website Samples"
+        description="View GameMedo's portfolio of high school and varsity sports highlight videos, hype reels, athletic website designs, and sports graphics. See real work samples for athletic departments."
+        keywords="sports video portfolio, athletic website design examples, high school sports graphics samples, varsity highlight reel examples, GameMedo work portfolio, sports design samples"
+        url="https://gamemedo.com/samples"
+        canonical="https://gamemedo.com/samples"
       />
       <Navbar />
       
