@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 import { BookingModal } from "./BookingModal";
 
-const navLinks = ["Home", "Services", "Order Gigs", "Samples", "About", "Contact"];
+const navLinks = ["Home", "Services", "Order Gigs", "Samples", "Blog", "About", "Contact"];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link}
-                href={link === "Home" ? "/" : link === "Services" ? "/services" : link === "Order Gigs" ? "/order" : link === "Samples" ? "/samples" : link === "About" ? "/about" : link === "Contact" ? "/contact" : `/#${link.toLowerCase()}`}
+                href={link === "Home" ? "/" : link === "Services" ? "/services" : link === "Order Gigs" ? "/order" : link === "Samples" ? "/samples" : link === "Blog" ? "/blog" : link === "About" ? "/about" : link === "Contact" ? "/contact" : `/#${link.toLowerCase()}`}
                 className="font-heading text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
               >
                 {link}
@@ -73,7 +73,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link}
-                href={link === "Home" ? "/" : link === "Services" ? "/services" : link === "Order Gigs" ? "/order" : link === "Samples" ? "/samples" : link === "About" ? "/about" : link === "Contact" ? "/contact" : `/#${link.toLowerCase()}`}
+                href={link === "Home" ? "/" : link === "Services" ? "/services" : link === "Order Gigs" ? "/order" : link === "Samples" ? "/samples" : link === "Blog" ? "/blog" : link === "About" ? "/about" : link === "Contact" ? "/contact" : `/#${link.toLowerCase()}`}
                 onClick={() => setOpen(false)}
                 className="block py-3 font-heading text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
               >

@@ -28,6 +28,8 @@ const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement")
 const VirtualAssistantAD = lazy(() => import("./pages/VirtualAssistantAD"));
 const WhoWeServe = lazy(() => import("./pages/WhoWeServe"));
 const Services = lazy(() => import("./pages/Services"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -78,6 +80,8 @@ const App = () => (
                 <Route path="/lp" element={<LandingPage />} />
                 <Route path="/hire-us" element={<ADLandingPage />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/services/sports-highlight-videos" element={<SportsHighlightVideos />} />
                 <Route path="/services/athletic-website-design" element={<AthleticWebsiteDesign />} />
                 <Route path="/services/athletic-website-management" element={<AthleticWebsiteManagement />} />

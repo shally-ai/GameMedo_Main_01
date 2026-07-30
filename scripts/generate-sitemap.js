@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 const pages = [
   '/',
   '/about',
+  '/blog',
   '/contact',
   '/samples',
   '/services',
