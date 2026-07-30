@@ -63,7 +63,8 @@ const TestimonialsSection = () => {
       try {
         const { data: docSnap } = await supabase.from("content").select("testimonials").eq("id", "main").maybeSingle();
         if (docSnap?.testimonials && Array.isArray(docSnap.testimonials) && docSnap.testimonials.length > 0) {
-          setTestimonialsData(docSnap.testimonials as Testimonial[]);
+          // Comment out to enforce the requested placeholder testimonials
+          // setTestimonialsData(docSnap.testimonials as Testimonial[]);
         }
       } catch (error) {
         console.error("Error fetching testimonials content:", error);
