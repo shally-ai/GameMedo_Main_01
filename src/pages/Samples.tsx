@@ -51,8 +51,8 @@ const Samples = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col selection:bg-primary/30">
       <SEO 
-        title="Our Work | Portfolio" 
-        description="Browse our recent sports graphics and video editing portfolio. See how we help teams stand out with high-quality designs."
+        title="GameMedo Portfolio — Sports Graphics, Videos & Athletic Websites" 
+        description="View our highlight videos, hype reels, website examples, and design work created for high school and varsity athletic programs."
       />
       <Navbar />
       

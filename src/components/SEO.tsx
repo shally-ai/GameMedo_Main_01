@@ -1,3 +1,4 @@
+import React from "react";
 import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
@@ -6,24 +7,29 @@ interface SEOProps {
   keywords?: string;
   image?: string;
   url?: string;
+  canonical?: string;
   type?: string;
   noIndex?: boolean; // For landing pages we don't want indexed
+  jsonLd?: object | null;
 }
 
-const SEO = ({
+export const SEO: React.FC<SEOProps> = ({
   title = "High School & Varsity Sports Graphic Design & Video Editing",
   description = "Elevate your team's game day with professional sports graphics and highlight reels. Fast, affordable, and elite sports design services.",
   keywords = "high school sports graphics, varsity highlights, sports design services, game day posters, recruit highlight reels, athletic branding, sports social media design, GameMedo",
   image = "https://gamemedo.com/assets/hero-bg.jpg",
   url = "https://gamemedo.com",
+  canonical,
   type = "website",
   noIndex = false,
-}: SEOProps) => {
+  jsonLd = null,
+}) => {
   const siteTitle = "GameMedo";
   const fullTitle = title.includes(siteTitle) ? title : `${title} | ${siteTitle}`;
+  const canonicalUrl = canonical || url || (typeof window !== 'undefined' ? window.location.href : 'https://gamemedo.com');
 
   // JSON-LD structured data — helps Google understand what the business offers
-  const structuredData = {
+  const orgJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
@@ -104,7 +110,8 @@ const SEO = ({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={canonicalUrl} />
+      {!noIndex && <meta name="robots" content="index, follow" />}
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph / Facebook */}
@@ -112,7 +119,7 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={canonicalUrl} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -123,7 +130,7 @@ const SEO = ({
       {/* JSON-LD Structured Data */}
       {!noIndex && (
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(jsonLd || orgJsonLd)}
         </script>
       )}
     </Helmet>

@@ -16,8 +16,8 @@ const Index = () => {
     <div className="min-h-screen bg-background scroll-smooth">
       <div className="grain-overlay" />
       <SEO 
-        title="Elevate Your Game"
-        description="Professional sports design services for teams and athletes. Custom jerseys, identity branding, and social media graphics."
+        title="GameMedo — Athletic Website Design, Sports Highlight Videos & VA Services"
+        description="GameMedo helps high school athletic departments with highlight videos, athletic website design, website management, social media, and Virtual Assistant services for Athletic Directors."
       />
       <Navbar />
       <HeroSection />

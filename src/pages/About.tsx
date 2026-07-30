@@ -60,8 +60,8 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="About Us | Elevating Athletic Brands" 
-        description="Learn more about GameMedo and our mission to provide elite sports graphic design and video editing services for high school and varsity teams."
+        title="About GameMedo — Sports Marketing & Video Production for Schools" 
+        description="Learn about GameMedo, our mission to support athletic departments, and our experience producing highlight videos and athletic websites for schools nationwide."
       />
       <Navbar />
 

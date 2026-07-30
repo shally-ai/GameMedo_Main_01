@@ -18,9 +18,13 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
-const LandingPage = lazy(() => import("./pages/LandingPage"));
-const OrderGigs = lazy(() => import("./pages/OrderGigs"));
 const ADLandingPage = lazy(() => import("./pages/ADLandingPage"));
+const SportsHighlightVideos = lazy(() => import("./pages/SportsHighlightVideos"));
+const AthleticWebsiteDesign = lazy(() => import("./pages/AthleticWebsiteDesign"));
+const AthleticWebsiteManagement = lazy(() => import("./pages/AthleticWebsiteManagement"));
+const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
+const VirtualAssistantAD = lazy(() => import("./pages/VirtualAssistantAD"));
+const WhoWeServe = lazy(() => import("./pages/WhoWeServe"));
 
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -70,6 +74,12 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/lp" element={<LandingPage />} />
                 <Route path="/hire-us" element={<ADLandingPage />} />
+                <Route path="/services/sports-highlight-videos" element={<SportsHighlightVideos />} />
+                <Route path="/services/athletic-website-design" element={<AthleticWebsiteDesign />} />
+                <Route path="/services/athletic-website-management" element={<AthleticWebsiteManagement />} />
+                <Route path="/services/social-media-management" element={<SocialMediaManagement />} />
+                <Route path="/services/virtual-assistant-athletic-directors" element={<VirtualAssistantAD />} />
+                <Route path="/who-we-serve" element={<WhoWeServe />} />
                 <Route path="/order" element={<OrderGigs />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
