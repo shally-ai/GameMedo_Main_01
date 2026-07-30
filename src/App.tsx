@@ -18,6 +18,8 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const LandingPage = lazy(() => import("./pages/LandingPage"));
+const OrderGigs = lazy(() => import("./pages/OrderGigs"));
 const ADLandingPage = lazy(() => import("./pages/ADLandingPage"));
 const SportsHighlightVideos = lazy(() => import("./pages/SportsHighlightVideos"));
 const AthleticWebsiteDesign = lazy(() => import("./pages/AthleticWebsiteDesign"));
