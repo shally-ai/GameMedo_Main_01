@@ -15,7 +15,7 @@ interface SEOProps {
 
 export const SEO: React.FC<SEOProps> = ({
   title = "High School & Varsity Sports Graphic Design & Video Editing",
-  description = "Elevate your team's game day with professional sports graphics and highlight reels. Fast, affordable, and elite sports design services.",
+  description = "GameMedo provides sports highlight videos, athletic website design, social media management, website management, and virtual assistant services for middle school, high school, and varsity athletic departments across the United States.",
   keywords = "high school sports graphics, varsity highlights, sports design services, game day posters, recruit highlight reels, athletic branding, sports social media design, GameMedo",
   image = "https://gamemedo.com/assets/hero-bg.jpg",
   url = "https://gamemedo.com",
@@ -40,7 +40,7 @@ export const SEO: React.FC<SEOProps> = ({
         "logo": "https://gamemedo.com/assets/logo.jpg",
         "image": image,
         "description": description,
-        "telephone": "",
+        "telephone": "+1-800-GAMEMEDO",
         "email": "contact@gamemedo.com",
         "priceRange": "$199 - $399/mo",
         "address": {
@@ -100,6 +100,33 @@ export const SEO: React.FC<SEOProps> = ({
         "provider": { "@id": "https://gamemedo.com/#business" },
         "description": "Specialized highlight reels for athletes looking to play at the next level. Professional presentation to get noticed by college coaches.",
         "serviceType": "Sports Recruiting Video"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://gamemedo.com/#service-va",
+        "name": "Virtual Assistant for Athletic Directors",
+        "provider": { "@id": "https://gamemedo.com/#business" },
+        "description": "Dedicated virtual assistant services for high school Athletic Directors. Includes scheduling, booster club management, FERPA-compliant document handling, and administrative support.",
+        "serviceType": "Virtual Assistant Services",
+        "offers": {
+          "@type": "Offer",
+          "price": "299",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "299",
+            "priceCurrency": "USD",
+            "unitText": "monthly"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://gamemedo.com/#service-social",
+        "name": "Social Media Management for Athletic Departments",
+        "provider": { "@id": "https://gamemedo.com/#business" },
+        "description": "Full social media management for high school athletic departments including content creation, posting schedules, Instagram and Facebook management, and fan engagement.",
+        "serviceType": "Social Media Management"
       }
     ]
   };
