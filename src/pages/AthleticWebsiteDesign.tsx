@@ -74,7 +74,7 @@ const AthleticWebsiteDesign: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="font-heading text-5xl md:text-7xl font-bold uppercase leading-tight mb-8"
             >
-              Athletic <span className="text-gradient">Website Design</span>
+              Athletic Website Design for <span className="text-gradient">High Schools & Varsity Programs</span>
             </motion.h1>
             
             <motion.p

@@ -74,7 +74,7 @@ const VirtualAssistantAD: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="font-heading text-5xl md:text-7xl font-bold uppercase leading-tight mb-8"
             >
-              Virtual Assistant <span className="text-gradient">for ADs</span>
+              Virtual Assistant Services for <span className="text-gradient">Athletic Directors</span>
             </motion.h1>
             
             <motion.p

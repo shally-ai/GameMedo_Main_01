@@ -74,7 +74,7 @@ const SocialMediaManagement: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="font-heading text-5xl md:text-7xl font-bold uppercase leading-tight mb-8"
             >
-              Social Media <span className="text-gradient">Management</span>
+              Social Media Management for <span className="text-gradient">Athletic Departments</span>
             </motion.h1>
             
             <motion.p

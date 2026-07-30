@@ -74,7 +74,7 @@ const SportsHighlightVideos: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="font-heading text-5xl md:text-7xl font-bold uppercase leading-tight mb-8"
             >
-              Sports Highlight & <span className="text-gradient">Hype Videos</span>
+              Sports Highlight & Hype Videos for <span className="text-gradient">High School Athletics</span>
             </motion.h1>
             
             <motion.p

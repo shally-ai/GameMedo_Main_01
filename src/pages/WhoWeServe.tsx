@@ -60,7 +60,7 @@ const WhoWeServe: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="font-heading text-5xl md:text-7xl font-bold uppercase leading-tight mb-8"
             >
-              Who We <span className="text-gradient">Serve</span>
+              Sports Agency Services for <span className="text-gradient">Middle Schools, High Schools & Varsity Programs</span>
             </motion.h1>
             
             <motion.p
