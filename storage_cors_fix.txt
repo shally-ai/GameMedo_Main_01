@@ -1,0 +1,33 @@
+# CRITICAL FIX: Firebase Storage CORS Policy
+
+If you are still getting 412 errors, it is because your Firebase Storage bucket is blocking requests from Hostinger. You MUST follow these steps to allow uploads:
+
+### 1. Create a file named 'cors.json'
+On your computer, create a file named `cors.json` and paste this inside:
+
+[
+  {
+    "origin": ["*"],
+    "method": ["GET", "POST", "PUT", "DELETE", "HEAD"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 3600
+  }
+]
+
+### 2. Apply the policy
+You need to use 'gsutil' (part of Google Cloud SDK) to apply this. If you don't have it, you can run this in the Google Cloud Shell (found in your Firebase Console > Project Settings > Usage & Billing > Details):
+
+gsutil cors set cors.json gs://gamemedo-8b731.firebasestorage.app
+
+---
+
+### Wait, what if I don't want to install anything?
+1. Go to your Firebase Console.
+2. Click the 'Web' icon to open the Cloud Shell (top right).
+3. Type 'nano cors.json' and paste the JSON above.
+4. Press Ctrl+O then Enter, then Ctrl+X.
+5. Run the 'gsutil' command above.
+
+---
+### Important Note on App Check
+If you enabled 'App Check' in the Firebase Console, you MUST also add the App Check code to the project, or uploads will be blocked. If you don't need it, we recommend disabling App Check for Storage in the 'Enforcement' tab.
