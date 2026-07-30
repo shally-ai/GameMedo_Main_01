@@ -33,9 +33,23 @@ const AthleticWebsiteDesign: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Athletic Website Design for High Schools & Athletic Departments"
-        description="Custom, responsive athletic websites built for high schools, varsity programs, and athletic directors. Fast builds, easy CMS, and live score integration."
-        keywords="athletic website design, high school sports website development, school athletic department web design, booster club websites, team schedules CMS"
+        title="Athletic Website Design for High Schools & Varsity Programs | GameMedo"
+        description="Professional athletic website design for high school and varsity sports programs. Mobile-first, ADA-compliant websites with live rosters, schedules, and recruiting-ready features."
+        keywords="athletic website design, high school sports website, varsity athletic website, school sports website design, athletic department website builder, high school athletics website"
+        url="https://gamemedo.com/services/athletic-website-design"
+        canonical="https://gamemedo.com/services/athletic-website-design"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        }}
       />
       <Navbar />
 

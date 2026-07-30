@@ -33,9 +33,23 @@ const SportsHighlightVideos: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Sports Highlight & Hype Videos for High Schools"
-        description="Professional highlight reels, hype videos, and recruiting clips for high school and varsity athletic programs. Fast turnaround and social-ready formats."
-        keywords="high school sports highlight videos, hype videos for athletics, sports video editing for schools, recruitment reels, game day video editing"
+        title="Sports Highlight & Hype Videos for High School Athletics | GameMedo"
+        description="Professional sports highlight videos and hype reels for high school and varsity athletic programs. Recruiting reels, season recaps, and game-day hype videos with 5-7 day turnaround."
+        keywords="sports highlight videos high school, varsity hype videos, recruiting highlight reel service, high school football video editing, athletic department video production, sports video editing for schools"
+        url="https://gamemedo.com/services/sports-highlight-videos"
+        canonical="https://gamemedo.com/services/sports-highlight-videos"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        }}
       />
       <Navbar />
 

@@ -33,9 +33,23 @@ const SocialMediaManagement: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Social Media Management for Athletic Departments"
-        description="Social media strategy, content creation, and daily posting for athletic departments to increase engagement and grow fan support."
-        keywords="sports social media management, athletic department social media, high school sports graphics templates, Instagram sports editing, Twitter sports updates"
+        title="Social Media Management for Athletic Departments | GameMedo"
+        description="Done-for-you social media management for high school and varsity athletic departments. Instagram, Facebook, and Twitter management with game-day graphics, schedules, and fan engagement."
+        keywords="social media management athletic departments, high school sports social media, varsity athletics Instagram management, school sports social media manager, athletic department Facebook management"
+        url="https://gamemedo.com/services/social-media-management"
+        canonical="https://gamemedo.com/services/social-media-management"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        }}
       />
       <Navbar />
 

@@ -33,9 +33,23 @@ const AthleticWebsiteManagement: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Athletic Website Management & Maintenance"
-        description="Ongoing website management for athletic departments: content updates, schedules, roster management, and security patches so ADs can focus on sports."
-        keywords="athletic website management, high school sports website maintenance, sports roster updates service, school athletic department webmaster, website support for ADs"
+        title="Athletic Website Management for School Athletic Departments | GameMedo"
+        description="Ongoing athletic website management for high school and varsity programs. We update rosters, schedules, news, and results so Athletic Directors can focus on their teams."
+        keywords="athletic website management, high school sports website maintenance, athletic department website updates, school sports website manager, varsity website management service"
+        url="https://gamemedo.com/services/athletic-website-management"
+        canonical="https://gamemedo.com/services/athletic-website-management"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a
+            }
+          }))
+        }}
       />
       <Navbar />
 
