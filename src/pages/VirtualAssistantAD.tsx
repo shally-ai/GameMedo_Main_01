@@ -35,8 +35,8 @@ const VirtualAssistantAD: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Virtual Assistant Services for Athletic Directors | GameMedo"
-        description="Dedicated virtual assistant services built specifically for high school Athletic Directors. Scheduling, booster club management, FERPA-compliant document handling, and administrative support starting at $299/month."
+        title="Virtual Assistant for Athletic Directors | GameMedo"
+        description="Dedicated virtual assistant services built for high school Athletic Directors. We handle schedules, booster emails, and FERPA-compliant admin tasks."
         keywords="virtual assistant for athletic directors, AD virtual assistant, athletic director administrative support, high school athletic department VA, sports admin virtual assistant, hire VA for athletic director"
         url="https://gamemedo.com/services/virtual-assistant-athletic-directors"
         canonical="https://gamemedo.com/services/virtual-assistant-athletic-directors"

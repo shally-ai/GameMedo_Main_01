@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GigCheckoutModal from "@/components/GigCheckoutModal";
 import DiscountPopup from "@/components/DiscountPopup";
+import SEO from "@/components/SEO";
 
 interface Gig {
   id: string;
@@ -115,6 +116,7 @@ const OrderGigs = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary/30">
+      <SEO title="Order Gigs" noIndex={true} />
       <Navbar />
       <DiscountPopup />
       

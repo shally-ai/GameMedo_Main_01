@@ -10,6 +10,7 @@ import {
 import { toast } from "@/hooks/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 interface AffiliateData {
   id: string;
@@ -179,6 +180,7 @@ const AffiliateDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO title="Partner Dashboard" noIndex={true} />
       <Navbar />
       
       <main className="pt-32 pb-20">

@@ -33,9 +33,11 @@ const WhoWeServe: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Who We Serve — Middle Schools, High Schools & Varsity Programs"
+        title="Who We Serve | High School & Varsity Sports Programs"
         description="Dedicated services for middle schools, high schools, junior varsity and varsity athletic departments across the United States."
         keywords="school athletic departments, varsity sports graphics, junior varsity highlights, middle school sports design, district wide athletic packages"
+        url="https://gamemedo.com/who-we-serve"
+        canonical="https://gamemedo.com/who-we-serve"
       />
       <Navbar />
 

@@ -34,8 +34,8 @@ const AthleticWebsiteManagement: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Athletic Website Management for School Athletic Departments | GameMedo"
-        description="Ongoing athletic website management for high school and varsity programs. We update rosters, schedules, news, and results so Athletic Directors can focus on their teams."
+        title="Athletic Website Management for High Schools | GameMedo"
+        description="Ongoing athletic website management for high school programs. We handle roster updates, schedule changes, and security so you can focus on winning."
         keywords="athletic website management, high school sports website maintenance, athletic department website updates, school sports website manager, varsity website management service"
         url="https://gamemedo.com/services/athletic-website-management"
         canonical="https://gamemedo.com/services/athletic-website-management"

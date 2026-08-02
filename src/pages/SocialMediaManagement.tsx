@@ -35,7 +35,7 @@ const SocialMediaManagement: React.FC = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Social Media Management for Athletic Departments | GameMedo"
-        description="Done-for-you social media management for high school and varsity athletic departments. Instagram, Facebook, and Twitter management with game-day graphics, schedules, and fan engagement."
+        description="Done-for-you social media management for high school athletics. We manage Instagram, Twitter, and Facebook with game-day graphics and updates."
         keywords="social media management athletic departments, high school sports social media, varsity athletics Instagram management, school sports social media manager, athletic department Facebook management"
         url="https://gamemedo.com/services/social-media-management"
         canonical="https://gamemedo.com/services/social-media-management"

@@ -48,8 +48,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact GameMedo - Get Started with Athletic Department Services"
-        description="Contact GameMedo to get started with sports highlight videos, athletic website design, social media management, or virtual assistant services for your school's athletic department."
+        title="Contact GameMedo | Athletic Department Support & Services"
+        description="Get in touch with GameMedo to start your next sports graphic design, highlight video, website design, or virtual assistant project today."
         keywords="contact GameMedo, sports services inquiry, athletic department support contact, hire sports video company, athletic director services contact"
         url="https://gamemedo.com/contact"
         canonical="https://gamemedo.com/contact"

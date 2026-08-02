@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const AdminLogin = () => {
   const { loginWithGoogle, resetPassword, user, isAdmin } = useAuth();
@@ -72,6 +73,7 @@ const AdminLogin = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden flex flex-col items-center justify-center p-4">
+      <SEO title="Admin Login" noIndex={true} />
       {/* Background blobs for premium feel */}
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 blur-[120px] rounded-full" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/5 blur-[120px] rounded-full" />

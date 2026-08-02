@@ -18,7 +18,7 @@ export const SEO: React.FC<SEOProps> = ({
   description = "GameMedo provides sports highlight videos, athletic website design, social media management, website management, and virtual assistant services for middle school, high school, and varsity athletic departments across the United States.",
   keywords = "high school sports graphics, varsity highlights, sports design services, game day posters, recruit highlight reels, athletic branding, sports social media design, GameMedo",
   image = "https://gamemedo.com/assets/hero-bg.jpg",
-  url = "https://gamemedo.com",
+  url,
   canonical,
   type = "website",
   noIndex = false,
@@ -41,7 +41,7 @@ export const SEO: React.FC<SEOProps> = ({
         "image": image,
         "description": description,
         "telephone": "+1-800-GAMEMEDO",
-        "email": "contact@gamemedo.com",
+        "email": "support@gamemedo.com",
         "priceRange": "$199 - $399/mo",
         "address": {
           "@type": "PostalAddress",

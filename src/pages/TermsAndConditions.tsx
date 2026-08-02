@@ -29,8 +29,10 @@ const TermsAndConditions = () => {
   return (
     <div className="min-h-screen bg-background text-foreground whitespace-normal">
       <SEO 
-        title="Terms and Conditions"
+        title="Terms & Conditions | GameMedo"
         description="Terms and Conditions for GameMedo services and website."
+        url="https://gamemedo.com/terms"
+        canonical="https://gamemedo.com/terms"
       />
       <Navbar />
       

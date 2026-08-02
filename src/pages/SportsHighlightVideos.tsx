@@ -35,8 +35,8 @@ const SportsHighlightVideos: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Sports Highlight & Hype Videos for High School Athletics | GameMedo"
-        description="Professional sports highlight videos and hype reels for high school and varsity athletic programs. Recruiting reels, season recaps, and game-day hype videos with 5-7 day turnaround."
+        title="Sports Highlight & Hype Videos for High Schools | GameMedo"
+        description="Professional sports highlight videos and hype reels for varsity athletic programs. Recruiting reels and season recaps with fast 5-7 day turnaround."
         keywords="sports highlight videos high school, varsity hype videos, recruiting highlight reel service, high school football video editing, athletic department video production, sports video editing for schools"
         url="https://gamemedo.com/services/sports-highlight-videos"
         canonical="https://gamemedo.com/services/sports-highlight-videos"

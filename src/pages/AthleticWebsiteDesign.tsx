@@ -34,8 +34,8 @@ const AthleticWebsiteDesign: React.FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Athletic Website Design for High Schools & Varsity Programs | GameMedo"
-        description="Professional athletic website design for high school and varsity sports programs. Mobile-first, ADA-compliant websites with live rosters, schedules, and recruiting-ready features."
+        title="Athletic Website Design for High Schools | GameMedo"
+        description="Professional athletic website design for high school and varsity programs. Mobile-first websites with live rosters, schedules, and recruitment portals."
         keywords="athletic website design, high school sports website, varsity athletic website, school sports website design, athletic department website builder, high school athletics website"
         url="https://gamemedo.com/services/athletic-website-design"
         canonical="https://gamemedo.com/services/athletic-website-design"

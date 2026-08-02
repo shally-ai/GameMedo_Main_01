@@ -4,6 +4,7 @@ import { Lock, Loader2, LogOut, LayoutDashboard, Calendar as CalendarIcon, Shopp
 import { toast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/integrations/supabase/client";
+import SEO from "@/components/SEO";
 
 // Tabs
 import AdminBookings from "./Tabs/AdminBookings";
@@ -107,6 +108,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col md:flex-row">
+      <SEO title="Admin Dashboard" noIndex={true} />
       {/* Mobile Header */}
       <div className="md:hidden flex items-center justify-between p-4 border-b border-border bg-card shrink-0">
         <h2 className="font-heading text-lg font-bold uppercase text-primary flex items-center gap-2">

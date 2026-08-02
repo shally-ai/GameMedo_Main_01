@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /admin
+Disallow: /affiliate/dashboard
+Disallow: /order
 
 Sitemap: https://gamemedo.com/sitemap.xml

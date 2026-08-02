@@ -29,8 +29,10 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background text-foreground whitespace-normal">
       <SEO 
-        title="Privacy Policy"
+        title="Privacy Policy | GameMedo"
         description="Privacy Policy for GameMedo services and website."
+        url="https://gamemedo.com/privacy"
+        canonical="https://gamemedo.com/privacy"
       />
       <Navbar />
       

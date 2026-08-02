@@ -31,6 +31,8 @@ const ADLandingPage = () => {
         title="GameMedo | Creative & Admin Support for Athletic Directors"
         description="GameMedo helps Athletic Directors save time by handling sports highlight videos, graphic design, athletic websites, social media content, and virtual assistant admin tasks. Serving high school and college athletic departments across the US."
         keywords="athletic director services, sports highlight video, high school athletic website, sports graphic design, athletic department virtual assistant, roster intro video, sports social media"
+        url="https://gamemedo.com/hire-us"
+        canonical="https://gamemedo.com/hire-us"
       />
 
       <Navbar />
